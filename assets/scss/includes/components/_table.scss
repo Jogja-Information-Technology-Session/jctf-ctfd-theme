@@ -31,3 +31,22 @@ th {
 .table > thead > th {
   white-space: nowrap;
 }
+
+// Style yang ditambah
+.table {
+  border-radius: 5px;
+  background-color: white;
+  overflow: hidden;
+}
+.table tbody {
+  color: #325376;
+}
+
+.table tbody tr:nth-child(odd) {
+  background-color: #E0E0E0;
+}
+
+.table thead {
+  background: radial-gradient(41.19% 834.6% at 24.55% 75.63%, #83D6E2 0%, #294D74 61.95%);
+  color: var(--bs-white);
+}

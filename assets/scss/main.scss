@@ -24,7 +24,7 @@ h2 {
 }
 
 a {
-  color: #337ab7;
+  color: #325376;
   text-decoration: none !important;
 }
 
@@ -82,4 +82,9 @@ select.form-control {
   border-color: #a3d39c;
   box-shadow: 0 0 0 0.1rem #a3d39c;
   transition: background-color 0.3s, border-color 0.3s;
+}
+
+// Style yang ditambah
+.bg-badge {
+  background-color: #325376;
 }
