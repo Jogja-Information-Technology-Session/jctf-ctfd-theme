@@ -11,22 +11,22 @@
   <div class="container">
     <div class="row">
 
-      <div class="col-md-3 offset-md-1 mb-3 mb-md-0">
-        <div class="nav flex-column nav-pills" role="tablist">
+      <div class="mb-3">
+        <div style="padding-right: 0 !important;" class="nav nav-pills col-md-8 container justify-content-center" role="tablist">
           <button
-              class="nav-link active" id="settings-profile-tab" data-bs-toggle="pill"
+              class="nav-link active flex-grow-1" id="settings-profile-tab" data-bs-toggle="pill"
               data-bs-target="#profile" role="tab"
           >Profile
           </button>
           <button
-              class="nav-link" id="settings-tokens-tab" data-bs-toggle="pill" data-bs-target="#tokens"
+              class="nav-link flex-grow-1" id="settings-tokens-tab" data-bs-toggle="pill" data-bs-target="#tokens"
               role="tab"
           >Access Tokens
           </button>
         </div>
       </div>
 
-      <div class="col-md-8">
+      <div class="col-md-9 container">
         <div class="tab-content" id="v-pills-tabContent">
           <div class="tab-pane fade show active" id="profile" role="tabpanel">
             {% include "components/errors.html" %}
@@ -81,6 +81,7 @@
 
                 <div id="results" class="mb-3">
                   <div
+                      style="border-width: 2px; border-color: #7CC590;"
                       class="alert alert-success alert-dismissible submit-row" role="alert"
                       x-cloak="success" x-show="success"
                   >
