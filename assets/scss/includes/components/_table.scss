@@ -35,18 +35,27 @@ th {
 // Style yang ditambah
 .table {
   border-radius: 5px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
   background-color: white;
   overflow: hidden;
 }
+
 .table tbody {
   color: #325376;
 }
 
-.table tbody tr:nth-child(odd) {
+.table.striped tbody tr:nth-child(odd) {
   background-color: #f2f2f2;
 }
 
 .table thead {
   background: radial-gradient(41.19% 834.6% at 24.55% 75.63%, #83D6E2 0%, #294D74 61.95%);
   color: var(--bs-white);
+}
+
+.table tbody tr:last-child {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom: #325376;
 }
