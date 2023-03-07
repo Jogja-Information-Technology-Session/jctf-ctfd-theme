@@ -34,7 +34,7 @@ Keterangan:
         │   └── notifications.html
         ├── config.html                 x
         ├── confirm.html                @yoga
-        ├── errors                      @adam
+        ├── errors                      @lois
         │   ├── 403.html
         │   ├── 404.html
         │   ├── 429.html
@@ -43,10 +43,10 @@ Keterangan:
         ├── login.html                  @lois
         ├── macros                      @ihsan
         │   └── forms.html
-        ├── notifications.html          @adam
+        ├── notifications.html          @lois
         ├── page.html                   @none
-        ├── register.html               @farrel
-        ├── reset_password.html         @farrel
+        ├── register.html               @ihsan
+        ├── reset_password.html         @lois
         ├── scoreboard.html             @lois
         ├── settings.html               @lois
         ├── setup.html                  x
@@ -58,7 +58,7 @@ Keterangan:
         │   ├── public.html             @yoga
         │   ├── team_enrollment.html    @yoga
         │   └── teams.html              @ihsan
-        └── users                       @farrel
-        ├── private.html                @farrel
-        ├── public.html                 @farrel
-        └── users.html                  @farrel
+        └── users                       @yoga
+        ├── private.html                @yoga
+        ├── public.html                 @ihsan
+        └── users.html                  @ihsan
