@@ -1,5 +1,6 @@
 @use "bootstrap/scss/bootstrap" as * with (
-  $info: #5c728f
+  $info: #5c728f,
+  $primary: #325376
 );
 
 @use "includes/components/table";
