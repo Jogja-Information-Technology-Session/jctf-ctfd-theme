@@ -91,3 +91,18 @@ select.form-control {
 .bg-badge {
   background-color: #325376;
 }
+
+.challenge-button {
+  &:hover {
+    background-color: #325376;
+  }
+
+  border-radius: 16px;
+  background-color: #7C9FC5;
+}
+
+.challenges-cards {
+  border-radius: 16px;
+  padding: 1rem;
+  background-color: #ffffff;
+}

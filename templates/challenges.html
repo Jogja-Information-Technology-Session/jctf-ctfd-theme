@@ -3,7 +3,7 @@
 {% block content %}
   <div class="jumbotron">
     <div class="container">
-      <h1>Challenges</h1>
+      <h1 style="font-weight: 900;">Challenges</h1>
     </div>
   </div>
 
@@ -34,9 +34,9 @@
 
       <div x-show="loaded">
         <template x-for="(category, idx) in getCategories()" :key="idx">
-          <div class="pt-5">
+          <div class="mt-5 challenges-cards">
             <div class="category-header mb-3">
-              <h3 x-text="category"></h3>
+              <h3 style="color: #325376; font-weight: 700;" x-text="category"></h3>
             </div>
 
             <div class="category-challenges d-flex flex-column">
@@ -44,7 +44,8 @@
                 <template x-for="(c, idx) in getChallenges(category)" :key="c.id">
                   <div class="col-sm-6 col-md-4 col-lg-3">
                     <button
-                        class="challenge-button btn btn-dark w-100 text-truncate my-3"
+                        style="box-shadow: none;"
+                        class="challenge-button text-white btn w-100 text-truncate my-3"
                         :class="c.solved_by_me ? 'challenge-solved' : ''"
                         :value="c.id" @click="loadChallenge(c.id)"
                     >
