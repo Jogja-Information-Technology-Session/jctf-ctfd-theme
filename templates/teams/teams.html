@@ -1,9 +1,9 @@
 {% extends "base.html" %}
 
 {% block content %}
-  <div class="jumbotron">
+  <div class="jumbotron" style="background-image: url(/themes/jctf-ctfd-theme/static/img/challenges_banner.png);">
     <div class="container">
-      <h1>Teams</h1>
+      <h1 style="font-weight: 900; color:#325376">Teams</h1>
     </div>
   </div>
 
@@ -22,11 +22,11 @@
         {% with form = Forms.teams.PublicTeamSearchForm(field=field, q=q) %}
           <form method="GET" class="row justify-content-around align-items-center">
             <div class="mb-3 col-md-2">
-              {{ form.field(class="form-control form-select w-100", style="color: #325376!important;") }}
+              {{ form.field(class="form-control form-select w-100", style="color: #325376!important; background-color: #ffffff!important;") }}
             </div>
 
             <div class="mb-3 col-md-8">
-              {{ form.q(class="form-control w-100", placeholder="Search for matching teams", style="color: #325376!important;") }}
+              {{ form.q(class="form-control w-100", placeholder="Search for matching teams", style="color: #325376!important; background-color: #ffffff!important;") }}
             </div>
 
             <div class="mb-3 col-md-2">
