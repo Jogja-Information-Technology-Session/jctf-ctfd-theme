@@ -1,14 +1,14 @@
 {% extends "base.html" %}
 
 {% block content %}
-  <div class="jumbotron">
+  <div class="jumbotron" style="background-image: url(/themes/jctf-ctfd-theme/static/img/challenges_banner.png);">
     <div class="container">
-      <h1>Join Team</h1>
+      <h1 style="font-weight: 900; color:#325376">Join Team</h1>
     </div>
   </div>
   <div class="container">
     <div class="row">
-      <div class="col-md-8 col-lg-6 offset-md-2 offset-lg-3">
+      <div class="col-md-8 col-lg-6 offset-md-2 offset-lg-3" style="color: #325376;">
         {% include "components/errors.html" %}
 
         <p class="h3 text-center mt-md-4">
@@ -18,7 +18,7 @@
         <p class="text-center">
           Click the button below to join the team!
           <br>
-          <small class="text-muted">
+          <small class="text-muted" style="color:#325376!important;">
             Or <a href="{{ url_for('teams.new') }}">click here</a> if you'd prefer to create your own team.
           </small>
         </p>
@@ -27,7 +27,7 @@
           <form method="POST">
             <div class="row pt-3 text-center">
               <div class="col-md-12">
-                {{ form.submit(class="btn btn-success w-100") }}
+                {{ form.submit(class="btn w-100", style="background-color: #325376; color: #ffffff; border-radius: 8px;") }}
               </div>
             </div>
             {{ form.nonce() }}
