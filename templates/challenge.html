@@ -1,5 +1,5 @@
 <div :class="getStyles()" role="document" x-data="Challenge" x-init="id = {{ challenge.id }}">
-  <div class="modal-content">
+  <div class="modal-content font-montserrat">
     <div class="modal-body" style="padding: 0 !important;">
 
       <div style="background-color: #D9D9D9; display: flex; align-items: center; flex-direction: row-reverse; justify-content: space-between;">
@@ -25,10 +25,10 @@
       <div>
         <div class="tab-content px-4 py-2 px-sm-5 pt-sm-2 pb-sm-5">
           <div role="tabpanel" class="tab-pane fade show active" id="challenge">
-            <h2 class="challenge-name text-center pt-3">
+            <h2 class="challenge-name text-center pt-3" style="font-weight: bold; color: #325376;">
               {{ challenge.name }}
             </h2>
-            <h3 class="challenge-value text-center">
+            <h3 class="challenge-value text-center" style="font-weight: bold; color: #325376;">
               {{ challenge.value }}
             </h3>
 
@@ -43,7 +43,7 @@
               </div>
             {% endif %}
 
-            <span class="challenge-desc">{% block description %}{{ challenge.html }}{% endblock %}</span>
+            <span class="challenge-desc" style="color:#325376;">{% block description %}{{ challenge.html }}{% endblock %}</span>
 
             {% if challenge.connection_info %}
               <div class="mb-2">
