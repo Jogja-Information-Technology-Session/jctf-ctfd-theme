@@ -92,11 +92,6 @@ select.form-control {
   background-color: #325376;
 }
 
-.bg-hero {
-  background-image: url("{{ url_for('static', filename='hero.png') }}");
-  background-size: cover;
-}
-
 // FONTS & TEXTS
 
 .font-montserrat {
