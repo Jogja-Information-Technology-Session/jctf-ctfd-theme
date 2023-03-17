@@ -41,7 +41,7 @@
   <body>
     {% include "components/navbar.html" %}
 
-    <main role="main" class="bg-hero">{% block content %} {% endblock %}</main>
+    <main role="main">{% block content %} {% endblock %}</main>
 
     {% include "components/notifications.html" %} {% block scripts %} {{
     Assets.js("assets/js/index.js") }} {% endblock %} {{ Plugins.scripts }} {{
