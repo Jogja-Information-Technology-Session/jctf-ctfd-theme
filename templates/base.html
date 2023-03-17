@@ -1,63 +1,50 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>{{ Configs.ctf_name }}</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="{{ Configs.ctf_small_icon }}" type="image/x-icon">
+  <head>
+    <title>{{ Configs.ctf_name }}</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="{{ Configs.ctf_small_icon }}" type="image/x-icon" />
+    <!-- Montserrat Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-  {% block stylesheets %}
-    {{ Assets.css("assets/scss/main.scss") }}
-  {% endblock %}
+    {% block stylesheets %} {{ Assets.css("assets/scss/main.scss") }} {% endblock %} {{
+    Plugins.styles }}
 
-  {{ Plugins.styles }}
-
-  <script type="text/javascript">
+    <script type="text/javascript">
       window.init = {
-          'urlRoot': "{{ request.script_root }}",
-          'csrfNonce': "{{ Session.nonce }}",
-          'userMode': "{{ Configs.user_mode }}",
-          'userId': {{ Session.id }},
-          'userName': {{ User.name | tojson }},
-          'userEmail': {{ User.email | tojson }},
-          'teamId': {{ Team.id | tojson }}, 
-          'teamName': {{ Team.name | tojson }},
-          'start': {{ Configs.start | tojson }},
-          'end': {{ Configs.end | tojson }},
-          'themeSettings': {{ Configs.theme_settings | tojson }},
-          'eventSounds': [
-            "/themes/core/static/sounds/notification.webm",
-            "/themes/core/static/sounds/notification.mp3",
-          ],
-      }
-  </script>
+        urlRoot: "{{ request.script_root }}",
+        csrfNonce: "{{ Session.nonce }}",
+        userMode: "{{ Configs.user_mode }}",
+        userId: "{{ Session.id }}",
+        userName: "{{ User.name | tojson }}",
+        userEmail: "{{ User.email | tojson }}",
+        teamId: "{{ Team.id | tojson }}",
+        teamName: "{{ Team.name | tojson }}",
+        start: "{{ Configs.start | tojson }}",
+        end: "{{ Configs.end | tojson }}",
+        themeSettings: "{{ Configs.theme_settings | tojson }}",
+        eventSounds: [
+          "/themes/core/static/sounds/notification.webm",
+          "/themes/core/static/sounds/notification.mp3",
+        ],
+      };
+    </script>
 
-  {{ Configs.theme_header }}
-</head>
-<body style="background-color: #d6e2ef;">
-{% include "components/navbar.html" %}
+    {{ Configs.theme_header }}
+  </head>
+  <body>
+    {% include "components/navbar.html" %}
 
-<main role="main">
-  {% block content %}
-  {% endblock %}
-</main>
+    <main role="main" class="bg-lighterblue">{% block content %} {% endblock %}</main>
 
-<footer class="footer">
-  <div class="container text-center">
-    <a href="https://ctfd.io" class="text-secondary">
-      <small class="text-muted">Powered by CTFd</small>
-    </a>
-  </div>
-</footer>
-
-{% include "components/notifications.html" %}
-
-{% block scripts %}
-  {{ Assets.js("assets/js/index.js") }}
-{% endblock %}
-
-{{ Plugins.scripts }}
-
-{{ Configs.theme_footer }}
-</body>
+    {% include "components/notifications.html" %} {% block scripts %} {{
+    Assets.js("assets/js/index.js") }} {% endblock %} {{ Plugins.scripts }} {{
+    Configs.theme_footer }}
+  </body>
 </html>
