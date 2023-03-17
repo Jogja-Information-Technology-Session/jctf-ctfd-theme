@@ -1,9 +1,9 @@
 {% extends "base.html" %}
 
 {% block content %}
-  <div class="jumbotron">
+  <div class="jumbotron"  style="background-image: url(/themes/jctf-ctfd-theme/static/img/challenges_banner.png);">
     <div class="container">
-      <h1>Register</h1>
+      <h1  style="font-weight: 900; color:#325376">Register</h1>
     </div>
   </div>
 
@@ -27,25 +27,25 @@
           <form method="post" accept-charset="utf-8" autocomplete="off" role="form">
 
             <div class="mb-3">
-              <b>{{ form.name.label(class="form-label") }}</b>
+              <b>{{ form.name.label(class="form-label", style="color: #325376;") }}</b>
               {{ form.name(class="form-control", value=name) }}
-              <small class="form-text text-muted">
+              <small class="form-text text-muted" style="color: #325376!important;">
                 Your username on the site
               </small>
             </div>
 
             <div class="mb-3">
-              <b>{{ form.email.label(class="form-label") }}</b>
+              <b>{{ form.email.label(class="form-label", style="color: #325376;") }}</b>
               {{ form.email(class="form-control", value=email) }}
-              <small class="form-text text-muted">
+              <small class="form-text text-muted" style="color: #325376!important;">
                 Never shown to the public
               </small>
             </div>
 
             <div class="mb-3">
-              <b>{{ form.password.label(class="form-label") }}</b>
+              <b>{{ form.password.label(class="form-label", style="color: #325376;") }}</b>
               {{ form.password(class="form-control", value=password) }}
-              <small class="form-text text-muted">
+              <small class="form-text text-muted" style="color: #325376!important;">
                 Password used to log into your account
               </small>
             </div>
@@ -56,7 +56,7 @@
 
             <div class="row pt-3">
               <div class="col-6 col-md-4 offset-6 offset-md-8">
-                {{ form.submit(class="btn btn-block btn-primary w-100") }}
+                {{ form.submit(class="btn btn-block btn-primary w-100", style="border-radius: 8px;") }}
               </div>
             </div>
 
