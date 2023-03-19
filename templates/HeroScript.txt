@@ -1,0 +1,40 @@
+<style>
+  main {
+    padding-top: 4rem;
+  }
+  p {
+   	font-size: 1.25rem; 
+  }
+  @media(min-width: 1536px) {
+    main {
+      padding-top: 6rem;
+    }
+    p {
+      font-size: 1.5rem; 
+    }
+  }
+</style>
+<main class='d-flex flex-column justify-content-center align-items-center'
+     style='overflow: hidden;
+            position: relative;
+            z-index: 10'>
+  <img src='/files/7d06e5c87fc825b9d8879e76abe717af/hero_title.svg' alt='JOINTS CTF' style='width: 30vw' />
+  <p class='font-montserrat text-center mt-3'
+     style='font-weight: 500;
+            line-height: 1.1;
+            color: #8C0B0B;
+            padding: 0 11em;'>
+    JOINTS Capture the Flag merupakan cabang kompetisi JOINTS dalam bidang keamanan siber dan jaringan yang terdiri dari peserta SLTA atau sederajat dan mahasiswa D3 dan S1 atau sederajat. Kompetisi bisa diikuti secara beregu, dengan maksimal anggota tim sebanyak 3 orang dari institusi yang sama termasuk ketua tim.
+  </p>
+</main>
+<img src='/files/6c9e01b88c7930ca2a10534f715ee7ef/hero.png' alt='hero bg' 
+     style='position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 0;
+            width: 100%;
+            z-index: 5;'/>
+<div class="position-absolute bg-white z-2" 
+     style="top: 0; left: -300px; 
+            height: calc(100vh);
+            width: calc(100vw + 300px);"></div>
