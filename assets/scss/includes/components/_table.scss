@@ -28,6 +28,14 @@ th {
   padding-left: 1rem !important;
 }
 
+.table > thead > tr > td {
+  padding: 0.5rem 0.75rem !important;
+}
+
+.table > thead > tr > td > b {
+  font-weight: 400 !important;
+}
+
 .table > thead > th {
   white-space: nowrap;
 }
