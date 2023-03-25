@@ -41,10 +41,16 @@
   <body>
     {% include "components/navbar.html" %}
 
-    <main role="main" class="bg-lighterblue">{% block content %} {% endblock %}</main>
+    <main role="main" class="bg-lighterblue pb-5 mb-0" style="min-height: 100vh">
+      {% block content %} {% endblock %}
+    </main>
 
-    {% include "components/notifications.html" %} {% block scripts %} {{
-    Assets.js("assets/js/index.js") }} {% endblock %} {{ Plugins.scripts }} {{
-    Configs.theme_footer }}
+    {% block scripts %} 
+      {{ Assets.js("assets/js/index.js") }}
+    {% endblock %} 
+    
+    {{ Plugins.scripts }} 
+    
+    {{ Configs.theme_footer }}
   </body>
 </html>

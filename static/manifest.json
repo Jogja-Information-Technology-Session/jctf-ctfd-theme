@@ -140,7 +140,11 @@
     ]
   },
   "assets/scss/main.scss": {
+<<<<<<< HEAD
     "file": "assets/main.4203f32c.css",
+=======
+    "file": "assets/main.ec66b6ac.css",
+>>>>>>> main
     "src": "assets/scss/main.scss",
     "isEntry": true
   }

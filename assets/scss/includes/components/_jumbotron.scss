@@ -10,9 +10,13 @@ main {
   padding: 2rem 1rem;
   margin-bottom: 2rem;
   text-align: center;
-
+  background-image: url(/themes/jctf-ctfd-theme/static/img/banner.png) !important;
+  background-size: cover;
+  background-position: center;
   background-color: var(--bs-dark);
-  color: var(--bs-white);
+  color: #294d74 !important;
+  font-weight: 900 !important;
+  font-family: Montserrat, sans-serif !important;
 }
 
 @media (min-width: 576px) {
