@@ -90,8 +90,8 @@ select.form-control {
 
 .form-control:focus {
   background-color: transparent;
-  border-color: #a3d39c;
-  box-shadow: 0 0 0 0.1rem #a3d39c;
+  border-color: #7C9FC5;
+  box-shadow: 0 0 0 0.1rem #7C9FC5;
   transition: background-color 0.3s, border-color 0.3s;
 }
 
@@ -100,9 +100,23 @@ select.form-control {
   background-color: #325376;
 }
 
+.challenge-button {
+  &:hover {
+    background-color: #325376;
+  }
+
+  border-radius: 16px;
+  background-color: #7C9FC5;
+}
+
+.challenges-cards {
+  border-radius: 16px;
+  padding: 1rem;
+  background-color: #ffffff;
+}
 // FONTS & TEXTS
 
-.font-montserrat {
+html, body, .container {
   font-family: Montserrat, sans-serif !important;
 }
 
