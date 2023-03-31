@@ -1,6 +1,13 @@
 @use "bootstrap/scss/bootstrap" as * with (
+  $primary: #325376,
+  $secondary: #7c9fc5,
+  $success: #05ee09,
+  $danger: #e95958,
+  $warning: #fffb1e,
   $info: #5c728f,
-  $primary: #325376
+  $light: #d6e2ef,
+  $dark: #14212f,
+  $black: #3a3a3a
 );
 
 @use "includes/components/table";
@@ -90,8 +97,8 @@ select.form-control {
 
 .form-control:focus {
   background-color: transparent;
-  border-color: #7C9FC5;
-  box-shadow: 0 0 0 0.1rem #7C9FC5;
+  border-color: #7c9fc5;
+  box-shadow: 0 0 0 0.1rem #7c9fc5;
   transition: background-color 0.3s, border-color 0.3s;
 }
 
@@ -106,7 +113,7 @@ select.form-control {
   }
 
   border-radius: 16px;
-  background-color: #7C9FC5;
+  background-color: #7c9fc5;
 }
 
 .challenges-cards {
@@ -116,7 +123,9 @@ select.form-control {
 }
 // FONTS & TEXTS
 
-html, body, .container {
+html,
+body,
+.container {
   font-family: Montserrat, sans-serif !important;
 }
 
